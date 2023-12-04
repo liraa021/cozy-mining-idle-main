@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sand Castle Idle</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Sky and Ground Section -->
+    <section class="back">
+      <!-- Sky with Clouds -->
+      <div class="Sky">
+        <div class="imgContainer">
+          <img class="cloud" src="image/cloud.svg" />
+          <img class="cloud2" src="image/cloud2.svg" />
+          <img class="cloud3" src="image/cloud3.svg" />
+        </div>
+      </div>
+      <!-- Ground -->
+      <div class="Ground"></div>
+    </section>
+
+    <!-- Button and Gear Section -->
+    <section>
+      <div class="button" id="button">
+        <img src="./image/power-button.svg" />
+      </div>
+      <div class="gear" id="gear"><img src="./image/gear.svg" /></div>
+    </section>
+
+    <!-- Coin and Diamond Section -->
+    <section>
+      <div class="rectangle">
+        <div class="coin-container">
+          <div class="coin"><img src="./image/coin.svg" /></div>
+          <div class="coin-number">1000</div>
+        </div>
+      </div>
+      <div class="rectangle2">
+        <div class="diamond-container">
+          <div class="diamond"><img src="./image/diamond.svg" /></div>
+          <div class="diamond-number">1000</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Conteúdo do Modal -->
+      <div class="modal-content">
+        <span class="close">x</span>
+
+        <!-- Elementos de volume -->
+        <div class="volume-control">
+          <img class="sound" src="./image/sound-icon.svg" width="40px" />
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="slider"
+            id="volumeSlider"
+          />
+        </div>
+
+        <!-- Ícone de tela cheia abaixo dos elementos de volume -->
+        <img class="fullscreen" src="./image/fullscreen.svg" />
+      </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

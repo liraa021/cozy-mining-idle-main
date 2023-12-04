@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+}
+
+.Sky {
+  background-color: #2cd2f7;
+  height: 70vh;
+}
+
+.Ground {
+  background-color: #e8d8b1;
+  height: 30vh;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgContainer img {
+  width: 20vw;
+}
+
+.imgContainer .cloud2 {
+  margin-top: 10rem;
+}
+
+.button img,
+.gear img {
+  width: 5vh;
+  position: fixed;
+}
+
+.button img {
+  right: 22px;
+  top: 2vh;
+}
+
+.gear img {
+  margin-top: -98vh;
+  margin-left: 22px;
+  transition: filter 0.3s ease;
+}
+
+.rectangle,
+.rectangle2 {
+  width: 220px;
+  height: 65px;
+  background-color: #2473ab;
+  border-radius: 15px;
+  position: relative;
+}
+
+.rectangle {
+  margin-top: -98vh;
+  margin-left: 50vh;
+}
+
+.rectangle2 {
+  margin-top: -7vh;
+  margin-left: 110vh;
+}
+
+.coin-container,
+.diamond-container {
+  position: absolute;
+  top: 50%;
+  left: 4vh;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.coin img,
+.diamond img {
+  width: 5vh;
+}
+
+.coin-number,
+.diamond-number {
+  position: absolute;
+  top: 50%;
+  left: 12vh;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3vh;
+}
+
+.gear:hover {
+  cursor: pointer;
+  filter: brightness(1.2);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 90px;
+  left: 0;
+  bottom: 150px;
+  width: 40%;
+  height: 80%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  width: 30%;
+  height: 100px;
+  margin-left: 80px;
+}
+
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 220px;
+  margin-bottom: 40px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 13%;
+  left: 12%;
+}
+
+.sound {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider {
+  width: 200%;
+  height: 20px;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.fullscreen {
+  width: 45px;
+  margin-right: 250px;
+  margin-top: 20px;
+}
